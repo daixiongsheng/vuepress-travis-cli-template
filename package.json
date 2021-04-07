@@ -1,0 +1,27 @@
+{
+  "name": "react-source-read",
+  "version": "1.0.0",
+  "description": "react源码阅读",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "prettier": "prettier --write './docs/**/*.{js,jsx,tsx,ts,less,md,json,vue}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daixiongsheng/react-source-read.git"
+  },
+  "author": "daixiongsheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daixiongsheng/react-source-read/issues"
+  },
+  "homepage": "https://github.com/daixiongsheng/react-source-read#readme",
+  "devDependencies": {
+    "@vuepress/theme-blog": "^2.3.3",
+    "vuepress": "^1.8.2",
+    "winston": "^3.3.3"
+  },
+  "dependencies": {}
+}
