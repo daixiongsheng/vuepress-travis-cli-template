@@ -1,3 +1,0 @@
-# React API
-
-# index.md
