@@ -9,6 +9,9 @@ module.exports = {
   base: "/template/",
   title: "template",
   description: "template",
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
   configureWebpack: (config, isServer) => {
     if (!isServer) {
       // 修改客户端的 webpack 配置
