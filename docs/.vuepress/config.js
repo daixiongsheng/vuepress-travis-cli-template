@@ -13,12 +13,11 @@ module.exports = {
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
   configureWebpack: (config, isServer) => {
-    if (!isServer) {
-      // 修改客户端的 webpack 配置
-      const { alias = {} } = config.resolve
-      config.resolve.alias = {
-        ...alias,
-        "@img": resolve(__dirname, "public/img")
+    return {
+      resolve: {
+        alias: {
+          '@img': resolve(__dirname, 'public/img'),
+        }
       }
     }
   },
